@@ -3,14 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Revisão</title>
+    <title>Revisão HTML e CSS</title>
+    <style>
+        *{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+        }
+        p{
+            color: red;
+        }
+        #nome{
+            color: blueviolet;
+        }
+        .titulo {
+            color:deeppink;
+        }
+    </style>
 </head>
 <body>
     <header>
         <nav></nav>
     </header>
     <main>
-        <h1>Cabeçalho nivel 1</h1>
+        <h1 class="titulo">Cabeçalho nivel 1</h1>
         <h6>Cabeçalho nivel 6</h6>
         <p>Este é o paragrafo</p>
         <a>PAgina do google</a>
@@ -34,8 +48,19 @@
                     <td colspan="2">Total: R$100,00</td>
                 </tr>
             </tfoot>
-            
         </table>
+        <form action="" method="">
+            <label for="nome">Informe seu nome:</label>
+            <input type="text" id="nome" name="nome">
+            <label for="sexo">Selecione o sexo:</label>
+            <select name="sexo" id="sexo">
+                <option value="F">Feminino</option>
+                <option value="M">Masculino</option>
+            </select>
+            <label for="obs">Observação</label>
+            <textarea id="obs" name="obs"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
     </main>
     <footer>
         <p>Rodape</p>
