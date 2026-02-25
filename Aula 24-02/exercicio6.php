@@ -17,9 +17,9 @@
 <button type="submit" class="btn btn-primary">Enviar</button>
 </form>
 <?php
-    if($_SERVER["REQUEST-METHOD"] == 'POST'){
-        $tempCelsius = $_POST['$tempCelsius'];
+    if($_SERVER["REQUEST_METHOD"] == 'POST'){
 
+        $tempCelsius = $_POST['tempCelsius'];
         $tempF = ($tempCelsius * 1.8) + 32;
         echo "A temperatura $tempCelsius em Fahrenheit é: $tempF";
     }
