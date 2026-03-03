@@ -18,7 +18,7 @@
     </form>
     <?php
         if($_SERVER ['REQUEST_METHOD'] == 'POST'){
-            $raio = $_SERVER['raio'];
+            $raio = $_POST['raio'];
             $perimetro = 2 * 3.14 * $raio;
 
             echo "O perimetro do circulo é: $perimetro";
