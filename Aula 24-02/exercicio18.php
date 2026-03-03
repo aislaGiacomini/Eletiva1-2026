@@ -22,6 +22,16 @@
             </div>
 <button type="submit" class="btn btn-primary">Enviar</button>
 </form>
+<?php
+    if($_SERVER['REQUEST_METHOD'] == 'POST'){
+        $valorCap = $_POST['valorCap'];
+        $taxaJuros = $_POST['taxaJuros'] / 100;
+        $periodo = $_POST['periodo'];
+
+        $resultado = ($valorCap * (1 + $taxaJuros) ** $periodo);
+        echo "O resultado do calculo de juros composto é:" . number_format($resultado);
+    }
+?>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </div>
 </body>
