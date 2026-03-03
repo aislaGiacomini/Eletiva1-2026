@@ -23,7 +23,7 @@
     if($_SERVER['REQUEST_METHOD'] == 'POST'){
         $numPeso = $_POST['numPeso'];
         $numAlt = $_POST['numAlt'];
-        $valorImc = $numPeso / ($numAlt ** 2) 
+        $valorImc = $numPeso / ($numAlt ** 2);
 
         echo "O valor do IMC é: $valorImc";
     }
