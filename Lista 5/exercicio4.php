@@ -27,7 +27,7 @@
             $dados['preco'] = $dados['preco'] * 1.15;
     }
 
-    if(count($_SESSION['item']) == 3){
+    if(count($_SESSION['item']) == 5){
         $item = $_SESSION['item'];
         uasort($item, function ($a, $b) {
             return $a['preco'] <=> $b['preco'];
