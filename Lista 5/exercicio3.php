@@ -9,6 +9,21 @@
 <body> 
 <div class="container py-3">
 <h1>Exercício 3 - Produto</h1>
+
+
+<form method="post">
+        <div class="mb-3">
+              <label for="codigo" class="form-label">Insira o código do produto</label>
+              <input type="number" id="codigo" name="codigo" class="form-control" required="">
+            </div><div class="mb-3">
+              <label for="produto" class="form-label">Insira o nome do produto</label>
+              <input type="text" id="produto" name="nome" class="form-control" required="">
+            </div><div class="mb-3">
+              <label for="preco" class="form-label">Insira o preco do produto </label>
+              <input type="number" id="preco" name="preco" class="form-control" required="">
+            </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+</form>
 <?php 
     session_start();
     if(!isset($_SESSION['produto'])){
@@ -42,24 +57,7 @@
         }
     }
 
-        
-
 ?>
-
-<form method="post">
-<div class="mb-3">
-              <label for="codigo" class="form-label">Insira o código do produto</label>
-              <input type="number" id="codigo" name="codigo" class="form-control" required="">
-            </div><div class="mb-3">
-              <label for="produto" class="form-label">Insira o nome do produto</label>
-              <input type="text" id="produto" name="nome" class="form-control" required="">
-            </div><div class="mb-3">
-              <label for="preco" class="form-label">Insira o preco do produto </label>
-              <input type="number" id="preco" name="preco" class="form-control" required="">
-            </div>
-        <button type="submit" class="btn btn-primary">Enviar</button>
-</form>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </div>
 </body>
